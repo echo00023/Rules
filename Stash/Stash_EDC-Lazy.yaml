@@ -87,6 +87,11 @@ proxy-providers:
   MyProxy-SG:
     <<: *MyProxy #引用锚点内容
     filter: "城|新|新加坡|\U0001F1F8\U0001F1EC|SG"
+    
+  #韩国节点
+  MyProxy-KR:
+    <<: *MyProxy #引用锚点内容
+    filter: "韩国|韩|KR|kr"
   
 #策略组
 proxy-groups:
@@ -132,6 +137,12 @@ proxy-groups:
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/SG.png
   use:
     - MyProxy-SG
+    
+- name: KR
+  type: select
+  icon: https://github.com/echo00023/icon/blob/main/Policy-Country/KR.png
+  use:
+    - MyProxy-KR
 
 - name: Globle
   type: select
@@ -165,6 +176,7 @@ proxy-groups:
   - JP
   - TW
   - SG
+  - KR
   - Final
   - DIRECT
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Netflix.png
@@ -177,6 +189,7 @@ proxy-groups:
   - JP
   - TW
   - SG
+  - KR
   - Final
   - DIRECT
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Disney+.png
@@ -201,6 +214,7 @@ proxy-groups:
   - JP
   - TW
   - SG
+  - KR
   - Final
   - DIRECT
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Youtube.png
@@ -213,6 +227,7 @@ proxy-groups:
   - JP
   - TW
   - SG
+  - KR
   - Final
   - DIRECT
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Spotify.png
@@ -245,6 +260,7 @@ proxy-groups:
   - JP
   - TW
   - SG
+  - KR
   - Final
   - DIRECT
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Telegram.png
