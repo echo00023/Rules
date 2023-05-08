@@ -134,7 +134,7 @@ proxy-groups:
 
 - name: TW
   type: select
-  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/TW02.png
+  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/TW.png
   use:
     - MyProxy-TW
 
@@ -164,8 +164,11 @@ proxy-groups:
   - JP
   - TW
   - SG
+  - KR
+  - EU
   - Final
   - DIRECT
+  - Proxy
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Outside.png
 
 - name: GlobleMedia
@@ -176,8 +179,11 @@ proxy-groups:
   - JP
   - TW
   - SG
+  - KR
+  - EU
   - Final
   - DIRECT
+  - Proxy
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/GMedia.png
 
 - name: Netflix
@@ -189,8 +195,10 @@ proxy-groups:
   - TW
   - SG
   - KR
+  - EU
   - Final
   - DIRECT
+  - Proxy
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Netflix.png
 
 - name: Disney+
@@ -202,8 +210,10 @@ proxy-groups:
   - TW
   - SG
   - KR
+  - EU
   - Final
   - DIRECT
+  - Proxy
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Disney+.png
 
 - name: HBO
@@ -214,8 +224,11 @@ proxy-groups:
   - JP
   - TW
   - SG
+  - KR
+  - EU
   - Final
   - DIRECT
+  - Proxy
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/HBO.png
 
 - name: Youtube
@@ -227,8 +240,10 @@ proxy-groups:
   - TW
   - SG
   - KR
+  - EU
   - Final
   - DIRECT
+  - Proxy
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Youtube.png
 
 - name: Spotify
@@ -240,8 +255,10 @@ proxy-groups:
   - TW
   - SG
   - KR
+  - EU
   - Final
   - DIRECT
+  - Proxy
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Spotify.png
 
 - name: TikTok
@@ -252,8 +269,11 @@ proxy-groups:
   - JP
   - TW
   - SG
+  - KR
+  - EU
   - Final
   - DIRECT
+  - Proxy
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Tiktok.png
 
 - name: Bilibili
@@ -261,7 +281,11 @@ proxy-groups:
   proxies:
   - HK
   - TW
+  - US
+  - KR
+  - EU
   - DIRECT
+  - Proxy
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Bilibili.png
 
 - name: Telegram
@@ -273,8 +297,10 @@ proxy-groups:
   - TW
   - SG
   - KR
+  - EU
   - Final
   - DIRECT
+  - Proxy
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Telegram.png
 
 - name: Clubhouse
@@ -287,6 +313,7 @@ proxy-groups:
   - SG
   - Final
   - DIRECT
+  - Proxy
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Clubhouse.png
 
 - name: Twitter
@@ -297,8 +324,11 @@ proxy-groups:
   - JP
   - TW
   - SG
+  - KR
+  - EU
   - Final
   - DIRECT
+  - Proxy
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Twitter.png
 
 - name: Speedtest
@@ -311,6 +341,7 @@ proxy-groups:
   - SG
   - Final
   - DIRECT
+  - Proxy
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Speedtest.png
 
 - name: PayPal
@@ -321,8 +352,11 @@ proxy-groups:
   - JP
   - TW
   - SG
+  - KR
+  - EU
   - Final
   - DIRECT
+  - Proxy
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Paypal.png
 
 - name: TestFlight
@@ -335,6 +369,7 @@ proxy-groups:
   - SG
   - Final
   - DIRECT
+  - Proxy
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/TestFlight.png
 
 - name: Apple
@@ -345,8 +380,11 @@ proxy-groups:
   - JP
   - TW
   - SG
+  - KR
+  - EU
   - Final
   - DIRECT
+  - Proxy
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Apple.png
 
 - name: Google
@@ -357,8 +395,11 @@ proxy-groups:
   - JP
   - TW
   - SG
+  - KR
+  - EU
   - Final
   - DIRECT
+  - Proxy
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Google.png
 
 - name: Microsoft
@@ -369,8 +410,11 @@ proxy-groups:
   - JP
   - TW
   - SG
+  - KR
+  - EU
   - Final
   - DIRECT
+  - Proxy
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Microsoft.png
 
 - name: Weibo
@@ -381,8 +425,11 @@ proxy-groups:
   - JP
   - TW
   - SG
+  - KR
+  - EU
   - Final
   - DIRECT
+  - Proxy
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Weibo.png
 
 - name: Mainland
@@ -393,8 +440,11 @@ proxy-groups:
   - JP
   - TW
   - SG
+  - KR
+  - EU
   - Final
   - DIRECT
+  - Proxy
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Mainland.png
 
 - name: Final
@@ -403,6 +453,13 @@ proxy-groups:
   - DIRECT
   - Auto-HK
   - Proxy
+  - US
+  - HK
+  - JP
+  - TW
+  - SG
+  - KR
+  - EU
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Final01.png
 
 #远程规则集合声明
