@@ -146,13 +146,13 @@ proxy-groups:
     
 - name: KR
   type: select
-  icon: https://github.com/echo00023/icon/blob/main/Policy-Country/KR.png
+  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/KR.png
   use:
     - MyProxy-KR
     
 - name: EU
   type: select
-  icon: https://github.com/echo00023/icon/blob/main/Policy-Country/UK.png
+  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Country/UK.png
   use:
     - MyProxy-EU
 
