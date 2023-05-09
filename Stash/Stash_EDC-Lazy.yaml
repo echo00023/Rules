@@ -97,13 +97,7 @@ proxy-providers:
   MyProxy-EU:
     <<: *MyProxy #引用锚点内容
     filter: "德国|英国|法国|DE|FR|UK|土耳其|意大利|俄罗斯|RU|波兰|LU|AR|TR|印度|埃及|巴基斯坦|阿根廷|IS|以色列|Br|维也纳|迪拜"
-    
-    
-  #自选节点
-  MyProxy-ZX:
-    <<: *MyProxy #引用锚点内容
-    filter: ""
-    
+      
 #策略组
 proxy-groups:
 
@@ -113,18 +107,6 @@ proxy-groups:
     - MyProxy
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Proxy.png
   
-- name: SS1
-  type: select
-  use:
-    - MyProxy
-  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Proxy.png
-  
-- name: SS2
-  type: select
-  use:
-    - MyProxy
-  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Proxy.png
-
 - name: Auto-HK
   type: url-test
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Auto.png
@@ -183,8 +165,6 @@ proxy-groups:
   - SG
   - KR
   - EU
-  - SS1
-  - SS2
   - Final
   - DIRECT
   - Proxy
@@ -200,8 +180,6 @@ proxy-groups:
   - SG
   - KR
   - EU
-  - SS1
-  - SS2
   - Final
   - DIRECT
   - Proxy
@@ -217,8 +195,6 @@ proxy-groups:
   - SG
   - KR
   - EU
-  - SS1
-  - SS2
   - Final
   - DIRECT
   - Proxy
@@ -234,8 +210,6 @@ proxy-groups:
   - SG
   - KR
   - EU
-  - SS1
-  - SS2
   - Final
   - DIRECT
   - Proxy
@@ -251,8 +225,6 @@ proxy-groups:
   - SG
   - KR
   - EU
-  - SS1
-  - SS2
   - Final
   - DIRECT
   - Proxy
@@ -268,8 +240,6 @@ proxy-groups:
   - SG
   - KR
   - EU
-  - SS1
-  - SS2
   - Final
   - DIRECT
   - Proxy
@@ -285,8 +255,6 @@ proxy-groups:
   - SG
   - KR
   - EU
-  - SS1
-  - SS2
   - Final
   - DIRECT
   - Proxy
@@ -302,8 +270,6 @@ proxy-groups:
   - SG
   - KR
   - EU
-  - SS1
-  - SS2
   - Final
   - DIRECT
   - Proxy
@@ -317,8 +283,6 @@ proxy-groups:
   - US
   - KR
   - EU
-  - SS1
-  - SS2
   - DIRECT
   - Proxy
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Bilibili.png
@@ -333,8 +297,6 @@ proxy-groups:
   - SG
   - KR
   - EU
-  - SS1
-  - SS2
   - Final
   - DIRECT
   - Proxy
@@ -363,8 +325,6 @@ proxy-groups:
   - SG
   - KR
   - EU
-  - SS1
-  - SS2
   - Final
   - DIRECT
   - Proxy
@@ -378,8 +338,6 @@ proxy-groups:
   - JP
   - TW
   - SG
-  - SS1
-  - SS2
   - Final
   - DIRECT
   - Proxy
@@ -395,8 +353,6 @@ proxy-groups:
   - SG
   - KR
   - EU
-  - SS1
-  - SS2
   - Final
   - DIRECT
   - Proxy
@@ -410,8 +366,6 @@ proxy-groups:
   - JP
   - TW
   - SG
-  - SS1
-  - SS2
   - Final
   - DIRECT
   - Proxy
@@ -427,8 +381,6 @@ proxy-groups:
   - SG
   - KR
   - EU
-  - SS1
-  - SS2
   - Final
   - DIRECT
   - Proxy
@@ -444,8 +396,6 @@ proxy-groups:
   - SG
   - KR
   - EU
-  - SS1
-  - SS2
   - Final
   - DIRECT
   - Proxy
@@ -461,8 +411,6 @@ proxy-groups:
   - SG
   - KR
   - EU
-  - SS1
-  - SS2
   - Final
   - DIRECT
   - Proxy
@@ -511,8 +459,6 @@ proxy-groups:
   - SG
   - KR
   - EU
-  - SS1
-  - SS2
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Final01.png
 
 #远程规则集合声明
