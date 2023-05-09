@@ -97,12 +97,29 @@ proxy-providers:
   MyProxy-EU:
     <<: *MyProxy #引用锚点内容
     filter: "德国|英国|法国|DE|FR|UK|土耳其|意大利|俄罗斯|RU|波兰|LU|AR|TR|印度|埃及|巴基斯坦|阿根廷|IS|以色列|Br|维也纳|迪拜"
-  
-  
+    
+    
+  #自选节点
+  MyProxy-ZX:
+    <<: *MyProxy #引用锚点内容
+    filter: ""
+    
 #策略组
 proxy-groups:
 
 - name: Proxy
+  type: select
+  use:
+    - MyProxy
+  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Proxy.png
+  
+- name: SS1
+  type: select
+  use:
+    - MyProxy
+  icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Proxy.png
+  
+- name: SS2
   type: select
   use:
     - MyProxy
@@ -166,6 +183,8 @@ proxy-groups:
   - SG
   - KR
   - EU
+  - SS1
+  - SS2
   - Final
   - DIRECT
   - Proxy
@@ -181,6 +200,8 @@ proxy-groups:
   - SG
   - KR
   - EU
+  - SS1
+  - SS2
   - Final
   - DIRECT
   - Proxy
@@ -196,6 +217,8 @@ proxy-groups:
   - SG
   - KR
   - EU
+  - SS1
+  - SS2
   - Final
   - DIRECT
   - Proxy
@@ -211,6 +234,8 @@ proxy-groups:
   - SG
   - KR
   - EU
+  - SS1
+  - SS2
   - Final
   - DIRECT
   - Proxy
@@ -226,6 +251,8 @@ proxy-groups:
   - SG
   - KR
   - EU
+  - SS1
+  - SS2
   - Final
   - DIRECT
   - Proxy
@@ -241,6 +268,8 @@ proxy-groups:
   - SG
   - KR
   - EU
+  - SS1
+  - SS2
   - Final
   - DIRECT
   - Proxy
@@ -256,6 +285,8 @@ proxy-groups:
   - SG
   - KR
   - EU
+  - SS1
+  - SS2
   - Final
   - DIRECT
   - Proxy
@@ -271,6 +302,8 @@ proxy-groups:
   - SG
   - KR
   - EU
+  - SS1
+  - SS2
   - Final
   - DIRECT
   - Proxy
@@ -284,6 +317,8 @@ proxy-groups:
   - US
   - KR
   - EU
+  - SS1
+  - SS2
   - DIRECT
   - Proxy
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Bilibili.png
@@ -298,6 +333,8 @@ proxy-groups:
   - SG
   - KR
   - EU
+  - SS1
+  - SS2
   - Final
   - DIRECT
   - Proxy
@@ -326,6 +363,8 @@ proxy-groups:
   - SG
   - KR
   - EU
+  - SS1
+  - SS2
   - Final
   - DIRECT
   - Proxy
@@ -339,6 +378,8 @@ proxy-groups:
   - JP
   - TW
   - SG
+  - SS1
+  - SS2
   - Final
   - DIRECT
   - Proxy
@@ -354,6 +395,8 @@ proxy-groups:
   - SG
   - KR
   - EU
+  - SS1
+  - SS2
   - Final
   - DIRECT
   - Proxy
@@ -367,6 +410,8 @@ proxy-groups:
   - JP
   - TW
   - SG
+  - SS1
+  - SS2
   - Final
   - DIRECT
   - Proxy
@@ -382,6 +427,8 @@ proxy-groups:
   - SG
   - KR
   - EU
+  - SS1
+  - SS2
   - Final
   - DIRECT
   - Proxy
@@ -397,6 +444,8 @@ proxy-groups:
   - SG
   - KR
   - EU
+  - SS1
+  - SS2
   - Final
   - DIRECT
   - Proxy
@@ -412,6 +461,8 @@ proxy-groups:
   - SG
   - KR
   - EU
+  - SS1
+  - SS2
   - Final
   - DIRECT
   - Proxy
@@ -460,120 +511,122 @@ proxy-groups:
   - SG
   - KR
   - EU
+  - SS1
+  - SS2
   icon: https://raw.githubusercontent.com/erdongchanyo/icon/main/Policy-Filter/Final01.png
 
 #远程规则集合声明
 rule-providers:
 
   Netflix-rules:
-    behavior: classical
+    behavior: domain
     interval: 86400
     name: Netflix
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Netflix/Netflix.yaml
 
   Disney-rules:
-    behavior: classical
+    behavior: domain
     interval: 86400
     name: Disney
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Disney/Disney.yaml
 
   HBO-rules:
-    behavior: classical
+    behavior: domain
     interval: 86400
     name: HBO
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/HBO/HBO.yaml
 
   Youtube-rules:
-    behavior: classical
+    behavior: domain
     interval: 86400
     name: Youtube
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/YouTube/YouTube.yaml
 
   Spotify-rules:
-    behavior: classical
+    behavior: domain
     interval: 86400
     name: Spotify
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Spotify/Spotify.yaml
 
   TikTok-rules:
-    behavior: classical
+    behavior: domain
     interval: 86400
     name: TikTok
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/TikTok/TikTok.yaml
 
   Bilibili-rules:
-    behavior: classical
+    behavior: domain
     interval: 86400
     name: Bilibili
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/BiliBili/BiliBili.yaml
 
   Telegram-rules:
-    behavior: classical
+    behavior: domain
     interval: 86400
     name: Telegram
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Telegram/Telegram.yaml
 
   Clubhouse-rules:
-    behavior: classical
+    behavior: domain
     interval: 86400
     name: Clubhouse
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Clubhouse/Clubhouse.yaml
   ClubhouseIP-rules:
-    behavior: classical
+    behavior: domain
     interval: 86400
     name: ClubhouseIP
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/ClubhouseIP/ClubhouseIP.yaml
 
   Twitter-rules:
-    behavior: classical
+    behavior: domain
     interval: 86400
     name: Twitter
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Twitter/Twitter.yaml
 
   Speedtest-rules:
-    behavior: classical
+    behavior: domain
     interval: 86400
     name: Speedtest
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Speedtest/Speedtest.yaml
 
   PayPal-rules:
-    behavior: classical
+    behavior: domain
     interval: 86400
     name: PayPal
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/PayPal/PayPal.yaml
 
   TestFlight-rules:
-    behavior: classical
+    behavior: domain
     interval: 86400
     name: TestFlight
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/TestFlight/TestFlight.yaml
 
   Apple-rules:
-    behavior: classical
+    behavior: domain
     interval: 86400
     name: Apple
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Apple/Apple.yaml
 
   Google-rules:
-    behavior: classical
+    behavior: domain
     interval: 86400
     name: Google
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Google/Google.yaml
 
   Microsoft-rules:
-    behavior: classical
+    behavior: domain
     interval: 86400
     name: Microsoft
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Microsoft/Microsoft.yaml
 
   Weibo-rules:
-    behavior: classical
+    behavior: domain
     interval: 86400
     name: Weibo
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Weibo/Weibo.yaml
 
   Mainland-rules:
-    behavior: classical
+    behavior: domain
     interval: 86400
     name: Mainland
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/China/China.yaml
@@ -584,10 +637,16 @@ rule-providers:
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/ChinaIPs/ChinaIPs_IP.yaml
 
   Globle-rules:
-    behavior: classical
+    behavior: domain
     interval: 86400
     name: Outside
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/release/rule/Clash/Global/Global_Classical.yaml
+
+  CF-rules:
+    behavior: domain
+    interval: 86400
+    name: Outside
+    url: https://raw.githubusercontent.com/ExaAlice/Alice/main/Rule/WARP.list
 
 #分流规则引用
 rules:
@@ -611,5 +670,7 @@ rules:
 - RULE-SET,Weibo-rules,Weibo
 - RULE-SET,Mainland-rules,Mainland
 - RULE-SET,MainlandIP-rules,Mainland
+- RULE-SET,CF-rules,CF
 - GEOIP,CN,DIRECT
 - MATCH,Final
+
